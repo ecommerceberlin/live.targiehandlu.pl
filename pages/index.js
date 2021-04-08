@@ -12,7 +12,7 @@ import {
     WidgetPresenters,
     WidgetSchedule,
     MyHead,
-    WidgetStage
+    WidgetSalesMap
   } from 'eventjuicer-site-components';
   
   import Head from 'next/head'
@@ -35,6 +35,7 @@ import {
 
     <WidgetVideoWithEventInfo setting="heroStreaming" />
 
+    <WidgetSalesMap />
 
    <WidgetRegForm
       setting="streaming_registration"
@@ -59,7 +60,7 @@ import {
   
     return await configure(props, {
       settings: settings,
-     // preload: ['companies', 'presenters']
+      preload: ['bookingmap', 'presenters']
     })
     
   })

@@ -106,7 +106,7 @@ const settings =  {
           {name: "position", required: true},
         ],
         start : ['email', 'fname'],
-        ticket_id : 1888,
+        ticket_id : 1911,
         email_template : "pl-livestream-registration",
         right: "https://res.cloudinary.com/eventjuicer/image/upload/f_auto/v1615497181/tehonline_reg.jpg",
         rightShadowed: true
@@ -160,54 +160,22 @@ const settings =  {
           url: 'https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/exhibit.jpg',
           label: 'common.whats_next',
         //   width: '50%',
-          target : "/exhibit"
+          target : "https://targiehandlu.pl"
         },
         ]
     },
 
-    heroExpo : {
 
-        videoSrc : "https://res.cloudinary.com/eventjuicer/video/upload/v1534454501/video_presenter_blak.mp4",
-        background : "https://res.cloudinary.com/eventjuicer/image/upload/v1534542530/poster_presenter_blak.jpg",
-        overlay : "red",
-        template : "heroGold",
-        heading : "event.claim",
-        subheading : "event.description",
-        showable: ["date", "location"],
-        orientation : "v",
-        primaryStyle: "heroPrimary",
-        secondaryStyle: "heroSecondary",
-        iconStyle: "heroIcon"
-
-    },
-
-    rolebuttonsExpo : {
-        accent : "gold",
-        items : [
-        {
-          url: 'https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/visit.jpg',
-          label: 'common.visitor',
-          width: '50%',
-          target : "/visit"
-        },
-        {
-          url: 'https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/exhibit.jpg',
-          label: 'common.exhibitor',
-          width: '50%',
-          target : "/exhibit"
-        },
-        ]
-    },
 
     bookingmap : {
-        height : 400,
+        height : 700,
         steps : [
             "choose_booth",
             "confirm",
             "pay",
             "access"
         ],
-        allowedGroupIds : [309, 310, 311, 312, 313, 314, 315],
+        allowedGroupIds : [335,336],
         disabledTicketIds : [],
         styles : {
             // light : null,
@@ -220,17 +188,10 @@ const settings =  {
             // networking : 316
         },
         boothStyleMapping: {
-            309: "light",
-            310: "standard",
-            311: "hot",
-            312: "superHot",
-            313: "ultra",
-            314: "grand",
-            315: "stage",
-            316: "networking",
-            321: "boothSold"
+            335: "light",
+            336: "hot"
         },
-        api : "https://orders.live.targiehandlu.pl/preorder"
+        api : "https://orderslive.targiehandlu.pl/preorder"
     },
 
 
@@ -300,69 +261,14 @@ const settings =  {
         }, 
     },
 
-    vips : {
-
-       benefits: {
-            label : "vips.benefits.title",
-            baseLabel : "vips.benefits",
-            items : [
-
-                {   
-                    icon : "FaFastForward",
-                    label : 'fastentry'
-                },
-            
-                {   
-                    icon : "FaChair",
-                    label : 'seats'
-                },
-            
-                {   
-                    icon : "FaHandshake",
-                    label : 'vipzone'
-                }
-            ]
-            
-       }
-    },
-
+ 
     
 
     ui : {
 
         menuItems : [
            
-            {
-                name: 'virtual',
-                items: [
-                  {name: 'register', to: '/virtual'},
-                  {name: 'schedule', to: '/schedule'},
-                  {name: 'speakers', to: '/speakers'},
-                ]
-            },
-
-
-            // {
-            //   name: 'visitors',
-            //   items: [
-            //     {name: 'visit', to: '/visit'},
-            //     // {name: 'schedule', to: '/schedule'},
-            //     // {name: 'presenters', to: '/presenters'},
-            //     // {name: 'exhibitors', to: '/exhibitors'},
-            //     // {name: 'offers', to: '/offers'}
-            //   ]
-            // },
-            {
-              name: 'exhibitors',
-              items: [
-                {name: 'exhibit', to: '/exhibit'},
-                // {name: 'sample-visitors', to: '/sample-visitors'},
-                // {name: 'exhibitors', to: '/exhibitors'},
-                // {name: 'premium-services', to: '/premium'},
-                // {name: 'faq', to: '/faq'},
-              ]
-            },
-
+           
             {
                 name: 'general',
                 items: [
@@ -414,27 +320,7 @@ const settings =  {
 
     visitor : {
 
-        register: {
-
-            wrapperProps: {
-                label : "visitors.register",
-            },
-            fields : [
-              {name: "email", required: true},
-              {name: "fname", required: true},
-              {name: "lname", required: true},
-              {name: "cname2", required: true},
-              {name: "position", required: true},
-              {name: "nip", required: false},
-              {name: "phone", required: true}
-            ],
-            start : ['email', 'fname'],
-            ticket_id : 1730,
-            email_template : "pl-visitors-registration",
-            background : "/lanyard.jpg",
-
-        },
-
+       
         benefits : {
 
             baseLabel: "visitors.benefits",
@@ -480,8 +366,8 @@ const settings =  {
         organizer_name : 'Infoguru Sp. z o.o. Sp. k.',
         organizer_address : 'POLAND, Poznań, Truskawiecka 13',
         organizer_regno : 'VAT ID 7811967834',
-        event_name : 'TARGI EHANDLU',
-        event_location : 'EXPO XXI Warszawa, Prądzyńskiego 12/14',
+        event_name : 'Kongres eHandlu Online',
+        event_location : 'internet',
         event_date : '10 czerwca  2021',
         event_hours : '10:00-17:00',
 
@@ -514,7 +400,7 @@ const settings =  {
         secondaryStyle: null,
       //  iconStyle: "heroIcon",
         links : [
-            {label: "exhibitors.agreement.title", href : "/legal-20200324"},
+         //   {label: "exhibitors.agreement.title", href : "/legal-20200324"},
         ]
     },
 
@@ -566,94 +452,6 @@ const settings =  {
         ]
 
     },
-
-    covid19 : {
-
-        visitors : {
-
-            label: "covid19.visitors.title",
-            secondaryLabel: "covid19.visitors.description",
-            baseLabel: "covid19.visitors.rules",
-            typography: "subtitle",
-            dense: true,
-
-            items: [
-
-                {
-                    icon : "Accepted",
-                    label :  'accepted',
-                },
-            
-                {
-                    icon : "Invited",
-                    label : 'invited'
-                },
-            
-                {
-                    icon : "Digital",
-                    label : 'no-on-site-regdesk'
-                }
-    
-            ]
-        }, 
-
-        exhibitors : {
-
-            label: "covid19.exhibitors.title",
-            secondaryLabel: "covid19.exhibitors.description",
-            baseLabel: "covid19.exhibitors.rules",
-            typography: "subtitle",
-            dense: true,
-
-            items: [
-
-                {
-                    icon : "Reps",
-                    label :  'reps',
-                },
-            
-                {
-                    icon : "Banned",
-                    label : 'noleaflets'
-                },
-            
-                {
-                    icon : "People",
-                    label : 'exclusive'
-                }
-
-            ]
-        },
-        
-        presenters : {
-
-            label: "covid19.presenters.title",
-            secondaryLabel: "covid19.presenters.description",
-            baseLabel: "covid19.presenters.rules",
-            typography: "subtitle",
-            dense: true,
-            
-            items: [
-
-                {
-                    icon: "Audience",
-                    label: 'audience-limit',
-                },
-            
-                {
-                    icon: "Live",
-                    label: 'streaming'
-                },
-            
-                // {
-                //     icon: "FaTrophy",
-                //     label: 'presentation'
-                // }
-
-            ]
-        }
-
-}
 
 
     

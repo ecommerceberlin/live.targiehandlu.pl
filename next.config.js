@@ -5,23 +5,13 @@ const withTM = require('next-transpile-modules')(['eventjuicer-site-components']
   module.exports = withTM({
     
     webpack: (config) => {
-      config.resolve.alias['react'] = path.resolve(__dirname, '.', 'node_modules', 'react');
-  
+      config.resolve.alias['react'] = path.resolve(__dirname, '.', 'node_modules', 'react');  
       return config
     },
 
     i18n: {
-      locales: ['en','pl'],
+      locales: ['pl'],
       defaultLocale: 'pl',  
-      // domains: [
-      //   {
-      //   domain: 'targiehandlu.pl',
-      //   defaultLocale: 'pl',
-      // },
-      // {
-      //   domain: 'ecommercewarsaw.com',
-      //   defaultLocale: 'en',
-      // }],
     },
 
     async rewrites() { return [{
@@ -29,7 +19,6 @@ const withTM = require('next-transpile-modules')(['eventjuicer-site-components']
       destination: '/speakers',
     },
     ]},
-
 
   
   });
