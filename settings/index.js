@@ -147,9 +147,9 @@ const settings =  {
         secondaryStyle: "heroSecondary",
         iconStyle: "heroIcon",
 
-        event_name : 'TARGI EHANDLU',
-        event_date : '24 marca  2021',
-        event_hours : '11:00',
+        event_name : 'Kongres Ehandlu Online',
+        event_date : '10 czerwca  2021',
+        event_hours : '10:00',
 
     },
 
