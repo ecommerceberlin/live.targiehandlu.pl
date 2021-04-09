@@ -38,15 +38,16 @@ import {
 
     <WidgetVideoWithEventInfo setting="heroStreaming" />
 
+ <WidgetIconGrid setting="sponsors.benefits" icons={{
+
+}}/>
     
     <WidgetSalesMap />
 
     <TimelineWithText baseLabel="videoself" />
     <TimelineWithText baseLabel="videostudio" />
   
-    <WidgetIconGrid setting="live.benefits" icons={{
-
-    }}/>
+   
 
    <WidgetRegForm
       setting="streaming_registration"

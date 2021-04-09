@@ -32,6 +32,7 @@ const settings =  {
 
         faq: {
             wrapperProps: {
+                label: null,
                 secondaryLabel: "videoself.faq.title"
             },
             baseLabel: "videoself.faq",
@@ -57,6 +58,7 @@ const settings =  {
 
         faq: {
             wrapperProps: {
+                label: null,
                 secondaryLabel: "videostudio.faq.title"
             },
             baseLabel: "videostudio.faq",
@@ -71,7 +73,37 @@ const settings =  {
     },
 
 
+    sponsors: {
 
+        benefits : {
+
+            baseLabel: "sponsors.benefits",
+
+            items: [
+
+                {
+                    icon : "FaLockOpen",
+                    label :  'free_entry',
+                },
+            
+                {
+             //       icon : "FaPiggyBank",
+                    label : 'well_known_organizer'
+                },
+            
+             
+            
+                {   
+                    icon : "FaWrench",
+                    label : 'formula'
+                },
+            
+             
+            
+              
+        ]
+        },
+    },
 
     virtual_featured_presenters: {
         wrapperProps:{
@@ -342,81 +374,7 @@ const settings =  {
 
     },
 
-    exhibitors : {
-        ogTemplate: "template_teh19_exhibitor_",
-        benefits : {
-            baseLabel: "exhibitors.benefits",
-            items: [
-                {
-                    icon : "FaHandshake",
-                    label :  'outreach',
-                },
-                {   
-                    icon : "FaComments",
-                    label : 'feedback'
-                },
-                {   
-                    icon : "FaSmile",
-                    label : 'organizer'
-                },
-                {   
-                    icon : "FaPiggyBank",
-                    label : 'all_inclusive'
-                },
-                {
-                    icon : "FaLink",
-                    label : 'meet_clients'
-                },
-                {
-                    icon : "FaLightbulb",
-                    label : 'inspiration'
-                }
-            ]
-        }
-    },
 
-    visitor : {
-
-       
-        benefits : {
-
-            baseLabel: "visitors.benefits",
-
-            items: [
-
-                {
-                    icon : "FaLockOpen",
-                    label :  'free_entry',
-                },
-            
-                {
-                    icon : "FaPiggyBank",
-                    label : 'special_offers'
-                },
-            
-                {
-                    icon : "FaSearch",
-                    label : 'insight'
-                },
-            
-                {   
-                    icon : "FaWrench",
-                    label : 'case_studies'
-                },
-            
-                {   
-                    icon : "FaHandshake",
-                    label : 'networking'
-                },
-            
-                {   
-                    icon : "FaChartLine",
-                    label : 'future'
-                }
-        ]
-        },
-      
-    },
     
     common : {
 
@@ -494,21 +452,7 @@ const settings =  {
         ]
     },
 
-    cfptimeline: {
-
-        baseLabel: "cfp.timeline",
-
-        items : [
-            {date: "2020-09-01", name: "submissions", icon:  "NoteAdd", dotColor: 'primary', active: true },
-            {date: "2020-09-16", name: "qualification", icon:  "Assessment" },
-            {date: "2020-09-21", name: "public-voting", icon:  "Public" },
-            // {date: "2020-10-26", name: "jury-voting", icon:  "HowToVote" },
-            {date: "2020-10-05", name: "results", icon:  "Mic", active: false },
-            {date: "2020-10-06", name: "formal", icon:  "Settings", active: false }
-
-        ]
-
-    },
+  
 
 
     
