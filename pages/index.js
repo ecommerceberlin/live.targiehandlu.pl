@@ -12,14 +12,17 @@ import {
     WidgetPresenters,
     WidgetSchedule,
     MyHead,
-    WidgetSalesMap
+    WidgetSalesMap,
+    WidgetVerticalTimeline,
+    WidgetIconGrid,
+    WidgetFaq
   } from 'eventjuicer-site-components';
   
   import Head from 'next/head'
 
   
   import settings from '../settings'
-  
+  import {TimelineWithText} from '../components'
   
   const PageIndex = (props) => (
   
@@ -35,7 +38,15 @@ import {
 
     <WidgetVideoWithEventInfo setting="heroStreaming" />
 
+    
     <WidgetSalesMap />
+
+    <TimelineWithText baseLabel="videoself" />
+    <TimelineWithText baseLabel="videostudio" />
+  
+    <WidgetIconGrid setting="live.benefits" icons={{
+
+    }}/>
 
    <WidgetRegForm
       setting="streaming_registration"

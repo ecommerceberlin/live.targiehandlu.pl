@@ -17,6 +17,60 @@ const settings =  {
     },
 
 
+    videoself: {
+
+        title: "videoself.title",
+        baseLabel: "videoself.timeline",
+        iconSize: "40",
+        items : [
+            {date: "2021-04-14", name: "sales", icon:  "NoteAdd", dotColor: 'black', active: true},
+            {date: "2021-04-30", name: "teaser", icon:  "Public"},
+            {date: "2021-05-05", name: "assessment", icon:  "Assessment" },
+            {date: "2021-05-28", name: "final", icon:  "HowToVote" },
+            {date: "2021-06-09", name: "conference", icon:  "Mic", active: false }   
+        ],
+
+        faq: {
+            wrapperProps: {},
+            baseLabel: "videoself.faq",
+            items: [
+              {label: 'not-accepted-teaser'},
+            //   { label: 'submission-limits' },
+            //   { label: 'co-presenter' },
+            //   { label: 'ranking' },
+            //   { label: 'fair-play' }
+            ]
+        }
+    },
+
+
+    videostudio: {
+        title: "videostudio.title",
+        baseLabel: "videostudio.timeline",
+        iconSize: "40",
+        items : [
+            {date: "2021-04-14", name: "sales", icon:  "NoteAdd", dotColor: 'black', active: true},
+            {date: "2021-04-30", name: "summary", icon:  "Public"},
+            {date: "2021-05-12", name: "recording", icon:  "Assessment" },
+            {date: "2021-06-02", name: "authorization", icon:  "HowToVote" },
+            {date: "2021-06-09", name: "conference", icon:  "Mic" }
+        ],
+
+        faq: {
+            wrapperProps: {},
+            baseLabel: "videostudio.faq",
+            items: [
+              { label: 'summary-howto'},
+              { label: 'recording-howto' },
+              { label: 'authorization-process' },
+            ]
+        }
+
+    },
+
+
+
+
     virtual_featured_presenters: {
         wrapperProps:{
             label: "virtual.presenters.title",
@@ -104,6 +158,7 @@ const settings =  {
           {name: "lname", required: true},
           {name: "cname2", required: true},
           {name: "position", required: true},
+          {name: "phone", required: false},
         ],
         start : ['email', 'fname'],
         ticket_id : 1911,
@@ -148,7 +203,7 @@ const settings =  {
         iconStyle: "heroIcon",
 
         event_name : 'Kongres Ehandlu Online',
-        event_date : '10 czerwca  2021',
+        event_date : '9 czerwca  2021',
         event_hours : '10:00',
 
     },
@@ -281,7 +336,7 @@ const settings =  {
 
     premium : {
 
-        ticketgroups : [331]
+        ticketgroups : [337]
 
     },
 
@@ -368,8 +423,8 @@ const settings =  {
         organizer_regno : 'VAT ID 7811967834',
         event_name : 'Kongres eHandlu Online',
         event_location : 'internet',
-        event_date : '10 czerwca  2021',
-        event_hours : '10:00-17:00',
+        event_date : '9 czerwca  2021',
+        event_hours : '10:00-15:00',
 
     },
 
