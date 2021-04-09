@@ -31,14 +31,13 @@ const settings =  {
         ],
 
         faq: {
-            wrapperProps: {},
+            wrapperProps: {
+                secondaryLabel: "videoself.faq.title"
+            },
             baseLabel: "videoself.faq",
+            showTitle: false,
             items: [
               {label: 'not-accepted-teaser'},
-            //   { label: 'submission-limits' },
-            //   { label: 'co-presenter' },
-            //   { label: 'ranking' },
-            //   { label: 'fair-play' }
             ]
         }
     },
@@ -57,8 +56,11 @@ const settings =  {
         ],
 
         faq: {
-            wrapperProps: {},
+            wrapperProps: {
+                secondaryLabel: "videostudio.faq.title"
+            },
             baseLabel: "videostudio.faq",
+            showTitle: false,
             items: [
               { label: 'summary-howto'},
               { label: 'recording-howto' },
