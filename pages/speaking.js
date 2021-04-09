@@ -21,15 +21,15 @@ import {
 
 
 import {
-  NoteAdd, 
-  Settings,
-  Public,
-  Mic,
-  Assessment,
-  FaSearch,
-  FaPoll,
-  FaTrophy
-} from '../components/icons'
+  // NoteAdd, 
+  // Settings,
+  // Public,
+  // Mic,
+  // Assessment,
+  // FaSearch,
+  // FaPoll,
+  // FaTrophy
+} from '../components'
 
 
 import settings from '../settings';
@@ -56,11 +56,11 @@ const PageSpeaking = () => (
           <WidgetVerticalTimeline 
           setting="cfptimeline" 
           icons={{
-            NoteAdd,
-            Settings,
-            Public,
-            Mic,
-            Assessment
+            // NoteAdd,
+            // Settings,
+            // Public,
+            // Mic,
+            // Assessment
           }} />
         }
 
@@ -152,9 +152,9 @@ New Developments in E-commerce
 
       
         <WidgetIconGrid setting="speakers.benefits" icons={{
-            FaSearch: FaSearch, 
-            FaPoll: FaPoll, 
-            FaTrophy: FaTrophy
+            // FaSearch: FaSearch, 
+            // FaPoll: FaPoll, 
+            // FaTrophy: FaTrophy
         }} />
 
 
