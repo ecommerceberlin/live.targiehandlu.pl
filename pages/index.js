@@ -15,12 +15,16 @@ import {
     WidgetSalesMap,
     WidgetVerticalTimeline,
     WidgetIconGrid,
-    WidgetFaq
+    WidgetFaq,
+    WidgetTabs
   } from 'eventjuicer-site-components';
   
   import Head from 'next/head'
 
-  
+import VideocamIcon from '@material-ui/icons/Videocam';
+import HomeWorkIcon from '@material-ui/icons/HomeWork';
+
+
   import settings from '../settings'
   import {TimelineWithText} from '../components'
   
@@ -43,12 +47,13 @@ import {
 }}/>
     
     <WidgetSalesMap />
-
-    <TimelineWithText baseLabel="videoself" />
-    <TimelineWithText baseLabel="videostudio" />
+    
+    <WidgetTabs setting="video" items={[
+      {label: "videoself.title", icon: HomeWorkIcon, content: <TimelineWithText baseLabel="videoself" />},
+      {label: "videostudio.title", icon: VideocamIcon, content:   <TimelineWithText baseLabel="videostudio" />}
+    ]} />
+    
   
-   
-
    <WidgetRegForm
       setting="streaming_registration"
       wrapperProps={{ 

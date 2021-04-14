@@ -16,6 +16,12 @@ const settings =  {
     
     },
 
+    video: {
+        wrapperProps: {
+            label: "video.title",
+            secondaryLabel: "video.subtitle"
+        },
+    },
 
     videoself: {
 
@@ -23,7 +29,7 @@ const settings =  {
         baseLabel: "videoself.timeline",
         iconSize: "40",
         items : [
-            {date: "2021-04-14", name: "sales", icon:  "NoteAdd", dotColor: 'black', active: true},
+            {date: "2021-04-15", name: "sales", icon:  "NoteAdd", dotColor: 'black', active: true},
             {date: "2021-04-30", name: "teaser", icon:  "Public"},
             {date: "2021-05-05", name: "assessment", icon:  "Assessment" },
             {date: "2021-05-28", name: "final", icon:  "HowToVote" },
@@ -49,7 +55,7 @@ const settings =  {
         baseLabel: "videostudio.timeline",
         iconSize: "40",
         items : [
-            {date: "2021-04-14", name: "sales", icon:  "NoteAdd", dotColor: 'black', active: true},
+            {date: "2021-04-15", name: "sales", icon:  "NoteAdd", dotColor: 'black', active: true},
             {date: "2021-04-30", name: "summary", icon:  "Public"},
             {date: "2021-05-12", name: "recording", icon:  "Assessment" },
             {date: "2021-06-02", name: "authorization", icon:  "HowToVote" },
@@ -91,7 +97,7 @@ const settings =  {
                     label : 'well_known_organizer'
                 },
             
-             
+        
             
                 {   
                     icon : "FaWrench",
@@ -381,9 +387,9 @@ const settings =  {
         organizer_name : 'Infoguru Sp. z o.o. Sp. k.',
         organizer_address : 'POLAND, Poznań, Truskawiecka 13',
         organizer_regno : 'VAT ID 7811967834',
-        event_name : 'Kongres eHandlu Online',
-        event_location : 'internet',
-        event_date : '9 czerwca  2021',
+        event_name : '20. Targi eHandlu',
+        event_location : 'EXPO XXI Warszawa',
+        event_date : '20 października  2021',
         event_hours : '10:00-15:00',
 
     },

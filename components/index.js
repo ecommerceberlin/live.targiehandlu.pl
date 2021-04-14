@@ -29,10 +29,10 @@ const Timeline = (props) => (<WidgetVerticalTimeline
 
 
 const TimelineWithText = ({baseLabel="videoself"}) => {
-
+ // <Wrapper label={`${baseLabel}.title`} first={false} dense={true} typography="subtitle"> 
   return (
 
-    <Wrapper label={`${baseLabel}.title`} first={false} dense={true}>
+   <div>
   
     <Section
   
@@ -44,6 +44,7 @@ const TimelineWithText = ({baseLabel="videoself"}) => {
         <div style={{marginBottom: 30}}>
         <MyTypography template="subtitle1" ><Markdown label={`${baseLabel}.description`} /></MyTypography>
         </div>
+        <WidgetFaq setting={`${baseLabel}.faq`} />
       </>
   }
   right={
@@ -52,11 +53,11 @@ const TimelineWithText = ({baseLabel="videoself"}) => {
       
   />
   
-  <WidgetFaq setting={`${baseLabel}.faq`} />
-
-  </Wrapper>
+ 
+  </div>
+ 
   )
-
+// </Wrapper>
 }
 
 
