@@ -328,6 +328,10 @@ const settings =  {
                 icon : "Done", 
                 primary : "studio"
             },
+            {
+                icon : "Done", 
+                primary : "portal"
+            },
             ]
         },
 
