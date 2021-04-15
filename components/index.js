@@ -38,10 +38,10 @@ const TimelineWithText = ({baseLabel="videoself"}) => {
   
     left={
       <>
-        <div style={{marginBottom: 30}}>
+        <div style={{marginBottom: 10}}>
         <MyTypography template="subtitle1" label={`${baseLabel}.subtitle`} />
         </div>  
-        <div style={{marginBottom: 30}}>
+        <div style={{marginBottom: 10}}>
         <MyTypography template="subtitle1" ><Markdown label={`${baseLabel}.description`} /></MyTypography>
         </div>
         <WidgetFaq setting={`${baseLabel}.faq`} />

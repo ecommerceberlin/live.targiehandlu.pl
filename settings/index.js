@@ -38,8 +38,7 @@ const settings =  {
 
         faq: {
             wrapperProps: {
-                label: null,
-                secondaryLabel: "videoself.faq.title"
+              
             },
             baseLabel: "videoself.faq",
             showTitle: false,
@@ -64,8 +63,7 @@ const settings =  {
 
         faq: {
             wrapperProps: {
-                label: null,
-                secondaryLabel: "videostudio.faq.title"
+             
             },
             baseLabel: "videostudio.faq",
             showTitle: false,
