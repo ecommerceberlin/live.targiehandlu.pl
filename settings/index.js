@@ -9,7 +9,7 @@ const settings =  {
             'admin': '1751bfe48d5ad21fd9d'
         },
         lang_api_endpoint : 'https://api.eventjuicer.com/proxy?url=https%3A%2F%2Flocalise.biz%2Fapi%2Fexport%2Fall.json%3Fformat%3Dmulti%26pretty%26key%3Dr_MBDf3NrpxqiMTWvycw5z7ICbciRjnt',    
-        api : "https://api.eventjuicer.com/proxy?url=https://api.eventjuicer.com/v1/public/hosts/live.targiehandlu.pl",
+        api : "https://api.eventjuicer.com/v1/public/hosts/live.targiehandlu.pl",
         post_api : "https://api.eventjuicer.com/v1/public/hosts/live.targiehandlu.pl/register",
         service_api : "https://api.eventjuicer.com/v1/services",
         og_image : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_limit,w_1024/v1546943854/ebe_og_home.jpg",
@@ -280,7 +280,9 @@ const settings =  {
         },
 
         benefits: {
-            335: [],
+            335: [
+                
+            ],
             336: [
             {
                 icon : "Done", 
