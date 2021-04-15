@@ -281,7 +281,10 @@ const settings =  {
 
         benefits: {
             335: [
-                
+                {
+                    icon : "Done", 
+                    primary : "standardtime"
+                },
             ],
             336: [
             {
