@@ -260,9 +260,10 @@ const settings =  {
         ]
     },
 
-
-
     bookingmap : {
+        wrapperProps: {
+            legend: "video.booking.title"
+        },
         height : 700,
         steps : [
             "choose_booth",
@@ -270,22 +271,61 @@ const settings =  {
             "pay",
             "access"
         ],
-        allowedGroupIds : [335,336],
+        allowedGroupIds : [335,336,337],
         disabledTicketIds : [],
-        styles : {
-            // light : null,
-            // standard : 310,
-            // hot : 311,
-            // superhot : 312,
-            // ultra : 313,
-            // grand : 314,
-            // stage : 315,
-            // networking : 316
-        },
         boothStyleMapping: {
             335: "light",
-            336: "hot"
+            336: "hot",
+            337: "superHot"
         },
+
+        benefits: {
+            335: [],
+            336: [
+            {
+                icon : "Done", 
+                primary : "extratime"
+            },
+            {
+                icon : "Done", 
+                primary : "sponsorbranding"
+            },
+            {
+                icon : "Done", 
+                primary : "socialmedia"
+            },
+            {
+                icon : "Done", 
+                primary : "mailing"
+            },
+            ],
+            337: [{
+                icon : "Done", 
+                primary : "watermark"
+            },
+            {
+                icon : "Done", 
+                primary : "headlinebranding"
+            },
+            {
+                icon : "Done", 
+                primary : "mailing"
+            },
+            {
+                icon : "Done", 
+                primary : "exclusive"
+            },
+            {
+                icon : "Done", 
+                primary : "socialmedia"
+            },
+            {
+                icon : "Done", 
+                primary : "studio"
+            },
+            ]
+        },
+
         api : "https://orderslive.targiehandlu.pl/preorder"
     },
 
@@ -387,9 +427,9 @@ const settings =  {
         organizer_name : 'Infoguru Sp. z o.o. Sp. k.',
         organizer_address : 'POLAND, Poznań, Truskawiecka 13',
         organizer_regno : 'VAT ID 7811967834',
-        event_name : '20. Targi eHandlu',
-        event_location : 'EXPO XXI Warszawa',
-        event_date : '20 października  2021',
+        event_name : 'eKongres eHandlu',
+        event_location : 'live.targiehandlu.pl',
+        event_date : '9 czerwca  2021',
         event_hours : '10:00-15:00',
 
     },
